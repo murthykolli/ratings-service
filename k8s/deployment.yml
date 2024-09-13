@@ -19,10 +19,10 @@ spec:
     spec:
       containers:
         - image: docker.io/murthykolli/ratings-service:0.0.1-SNAPSHOT
-          name: gateway-service
+          name: ratings-service
           volumeMounts:
             - mountPath: /app/config
-              name: gateway-service-config
+              name: ratings-service-config
           env:
             - name: SPRING_CONFIG_LOCATION
               value: /app/config/
