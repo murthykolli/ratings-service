@@ -89,8 +89,8 @@
 
 					<docker>
 						<publishRegistry>
-							<username>DOCKERHUB_USER</username>
-							<password>DOCKERHUB_PWD</password>
+							<username>${env.DOCKERHUB_USER}</username>
+							<password>${env.DOCKERHUB_PWD}</password>
 						</publishRegistry>
 					</docker>
 				</configuration>
